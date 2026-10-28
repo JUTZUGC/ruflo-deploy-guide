@@ -8,23 +8,23 @@
     "oneLiner": "面向编码 Agent 的集群编排与记忆层",
     "officialRepo": "https://github.com/ruvnet/ruflo",
     "officialDocs": "https://github.com/ruvnet/ruflo#quick-start",
-    "stars": "79.4k",
+    "stars": "79.9k",
     "license": "MIT",
     "highlights": [
       "Agent：98 个预置角色，可组 swarm 协作",
       "记忆：跨会话向量记忆与知识图谱",
       "入口：Claude Code 插件 / CLI / MCP server / TUI",
       "治理：路由、策略、成本与事件面板",
-      "规模：100+ Release，当前 v3.63.3"
+      "规模：100+ Release，当前 v3.63.6"
     ],
     "mcpSupport": "Ruflo 自带 MCP server，可注册到 Claude Code 等客户端。本仓库的 MCP 只提供安装、初始化与常见坑。",
     "webuiUrl": "",
     "adapterPorts": "",
-    "collectedAt": "2026-10-26",
+    "collectedAt": "2026-10-28",
     "verification": [
       [
-        "npm 包 ruflo 版本 3.63.3、engines.node >=20.0.0 已核对",
-        "已验证 2026-10-26"
+        "npm 包 ruflo 版本 3.63.6、engines.node >=20.0.0 已核对",
+        "已核对 2026-10-28"
       ],
       [
         "Windows 上 npx ruflo@latest --version 实测输出 ruflo v3.63.3",

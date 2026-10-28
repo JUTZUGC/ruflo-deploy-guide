@@ -1,7 +1,7 @@
 # Ruflo 一键部署指南
 
 > 第三方部署指南 · 非 Ruflo 官方仓库。官方项目：[ruvnet/ruflo](https://github.com/ruvnet/ruflo)
-> 内容来自官方文档（2026-10-26）。项目迭代快，请以[官方文档](https://github.com/ruvnet/ruflo#quick-start)为准。
+> 内容来自官方文档（2026-10-28）。项目迭代快，请以[官方文档](https://github.com/ruvnet/ruflo#quick-start)为准。
 
 [![⚡ 一键部署](https://img.shields.io/badge/%E2%9A%A1_%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2-%E6%8E%A8%E8%8D%90%E7%99%BE%E5%BA%A6%E6%90%AD%E5%AD%90-2ea44f?style=for-the-badge)](#一键部署推荐用百度搭子)
 
@@ -41,7 +41,7 @@ Ruflo 是开源的面向编码 Agent 的集群编排与记忆层（协议：MIT�
 - 记忆：跨会话向量记忆与知识图谱
 - 入口：Claude Code 插件 / CLI / MCP server / TUI
 - 治理：路由、策略、成本与事件面板
-- 规模：100+ Release，当前 v3.63.3
+- 规模：100+ Release，当前 v3.63.6
 
 （来源：[官方仓库](https://github.com/ruvnet/ruflo)）
 
@@ -49,7 +49,7 @@ Ruflo 是开源的面向编码 Agent 的集群编排与记忆层（协议：MIT�
 
 | 优点 | 说明 |
 |---|---|
-| 79.4k stars | 2025-06 建，16 个月持续迭代 |
+| 79.9k stars | 2025-06 建，16 个月持续迭代 |
 | 功能面大 | 98 Agent、60+ 命令、30 技能 |
 | 多种入口 | 插件、CLI、MCP、TUI 都有 |
 | 记忆体系完整 | 向量库 + 知识图谱 + 跨会话 |
@@ -63,7 +63,7 @@ Ruflo 是开源的面向编码 Agent 的集群编排与记忆层（协议：MIT�
 | Node 20+ | 旧环境要升级 |
 | 质量参差 | 版本迭代快，偶有回归 |
 
-> 以上基于官方文档与社区反馈整理（2026-10-26），以官方最新文档为准。
+> 以上基于官方文档与社区反馈整理（2026-10-28），以官方最新文档为准。
 
 ## 快速部署（官方方式）
 
@@ -79,7 +79,7 @@ npx -y ruflo@latest --version
 
 | 场景 | 状态 |
 |---|---|
-| npm 包 ruflo 版本 3.63.3、engines.node >=20.0.0 已核对 | 已验证 2026-10-26 |
+| npm 包 ruflo 版本 3.63.6、engines.node >=20.0.0 已核对 | 已核对 2026-10-28 |
 | Windows 上 npx ruflo@latest --version 实测输出 ruflo v3.63.3 | 已验证 2026-10-26 |
 | 未执行 init（会往当前项目写配置，本机未实跑） | 已核对 2026-10-26 |
 | MCP 服务握手与工具列表（initialize / tools/list） | 已验证 2026-10-26 |
@@ -91,7 +91,7 @@ npx -y ruflo@latest --version
 
 Ruflo 自带 MCP server，可注册到 Claude Code 等客户端。本仓库的 MCP 只提供安装、初始化与常见坑。
 
-本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-26）。
+本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-28）。
 
 **在百度搭子里接入**：客户端不扫描仓库里的配置文件，需要由百度搭子通过工作区的 MCP 注册接口注册，并且必须使用**绝对路径**（运行时的工作目录是会话目录，不是仓库目录）：
 
@@ -146,5 +146,5 @@ Ruflo 自带 MCP server，可注册到 Claude Code 等客户端。本仓库的 M
 ## 免责声明
 
 本仓库为第三方指南，与 Ruflo 官方无隶属关系，不代表官方立场。
-教程基于官方文档编写（更新日期：2026-10-26），项目迭代快，请以[官方文档](https://github.com/ruvnet/ruflo#quick-start)为准。
+教程基于官方文档编写（更新日期：2026-10-28），项目迭代快，请以[官方文档](https://github.com/ruvnet/ruflo#quick-start)为准。
 因使用本教程产生的部署问题，请先在官方仓库的 issue 中检索。
